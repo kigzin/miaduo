@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Duo da Vida - Visual Novel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+
+<!-- Tela de título -->
+<div id="titleScreen" class="screen active">
+<h1>Duo da Vida</h1>
+<button id="start">Iniciar</button>
+</div>
+
+<!-- Tela do jogo -->
+<div id="gameScreen" class="screen">
+<div id="characters">
+<div id="john" class="char">🐈‍⬛</div>
+<div id="mia" class="char">🤍🐈</div>
+</div>
+
+<div id="dialogue">
+<div id="name"></div>
+<div id="text"></div>
+<button id="next">▶</button>
+</div>
+</div>
+
+<!-- Tela final -->
+<div id="endScreen" class="screen">
+<h1>💖 Fiz com carinho espero que goste 💖</h1>
+<button onclick="location.reload()">Jogar de novo</button>
+</div>
+
+<!-- Música de fundo -->
+<audio id="music" loop autoplay>
+<source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_5bb9c2b1aa.mp3" type="audio/mp3">
+</audio>
+
+<script src="story.js"></script>
+<script src="engine.js"></script>
+
+</body>
+</html>
